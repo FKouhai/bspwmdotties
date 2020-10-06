@@ -13,15 +13,6 @@
 # Your default LARBS WM is determined in your `~/.profile` on login.  Here we
 # run the proper command to run when the graphical environment starts.
 feh --bg-scale /mnt/particion/Downloads2/wallhaven-zmm7mw.png
-setterm -blank 0 -powersave off -powerdown 0
-xset s off
-case "$LARBSWM" in
-	dwm) while :; do
-		ssh-agent dwm || break
-		done ;;
-	i3) exec i3 ;;
-	*) echo "No valid LARBS window manager detected." ;;
-esac
 xrandr --output DP-0 --left-of HDMI-0
 shxkd &
 exec bspwm
