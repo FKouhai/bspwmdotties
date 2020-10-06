@@ -12,7 +12,6 @@
 
 # Your default LARBS WM is determined in your `~/.profile` on login.  Here we
 # run the proper command to run when the graphical environment starts.
-feh --bg-scale /mnt/particion/Downloads2/wallhaven-zmm7mw.png
 xrandr --output DP-0 --left-of HDMI-0
 shxkd &
 exec bspwm
